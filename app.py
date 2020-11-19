@@ -32,8 +32,8 @@ def hello_world():
         'corona_info': info,
         'data': sorted(corona_info, key=lambda i: int(''.join(i['confirm_case'].replace(',', ''))), reverse=True)
     }
-    return render_template('coronainfo/index.html', **context)
-
+    # return render_template('coronainfo/index.html', **context)
+    return "Hello"
 
 if __name__ == '__main__':
     app.run()
